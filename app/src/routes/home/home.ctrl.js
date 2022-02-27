@@ -18,9 +18,8 @@ console.log(users.id);
 
 const process = {
   login: (req, res) => {
-    console.log(req.body.id);
-    const id = req.body.id,
-      password = req.body.password;
+    const id = req.id,
+      password = req.password;
     if (users.id === id) {
       if (users.password === password) {
         return res.json({
